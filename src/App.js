@@ -201,6 +201,10 @@ class App extends Component {
                     <br/>
                     <p>{this.state.party}</p>
 
+                    <div class="fb-share-button"
+                         data-href="https://nati-levi.github.io/miflagator/"
+                         data-layout="button_count">
+                    </div>
 
                 </header>
             </div>
