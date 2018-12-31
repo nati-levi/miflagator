@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/miflagator/static/js/runtime~main.238e3072.js"
   },
   {
-    "revision": "8d9d03155f628e27c7d1",
-    "url": "/miflagator/static/js/main.8d9d0315.chunk.js"
+    "revision": "fb418d3dabb9602095d8",
+    "url": "/miflagator/static/js/main.fb418d3d.chunk.js"
   },
   {
     "revision": "f715b2e0bea123466b14",
     "url": "/miflagator/static/js/1.f715b2e0.chunk.js"
   },
   {
-    "revision": "8d9d03155f628e27c7d1",
+    "revision": "fb418d3dabb9602095d8",
     "url": "/miflagator/static/css/main.df44960e.chunk.css"
   },
   {
-    "revision": "bfb71dfb8961c2705270ea0a4cc205ba",
+    "revision": "4439358f4d20a1aa945aaf32e67b717f",
     "url": "/miflagator/index.html"
   }
 ];
