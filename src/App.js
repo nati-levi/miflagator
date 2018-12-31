@@ -180,11 +180,22 @@ class App extends Component {
         };
 
         this.onClick = this.onClick.bind(this);
+        this.onShareClick = this.onShareClick.bind(this);
     }
 
     onClick() {
         this.setState({
             party: randomizePartyName()
+        });
+    }
+
+    onShareClick() {
+        window.FB.ui({
+            method: 'share',
+            display: 'popup',
+            quote: `המפלגה שלי היא ${this.state.party}. ושלך?`,
+            href: 'https://nati-levi.github.io/miflagator/',
+        }, function (response) {
         });
     }
 
@@ -201,10 +212,7 @@ class App extends Component {
                     <br/>
                     <p>{this.state.party}</p>
 
-                    <div class="fb-share-button"
-                         data-href="https://nati-levi.github.io/miflagator/"
-                         data-layout="button_count">
-                    </div>
+                    <button className="facebook" onClick={this.onShareClick}>share</button>
 
                 </header>
             </div>
