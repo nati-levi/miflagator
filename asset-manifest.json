@@ -1,14 +1,14 @@
 {
-  "main.css": "/miflagator/static/css/main.cfb837f3.chunk.css",
-  "main.js": "/miflagator/static/js/main.44e02303.chunk.js",
-  "main.js.map": "/miflagator/static/js/main.44e02303.chunk.js.map",
+  "main.css": "/miflagator/static/css/main.289fdf1f.chunk.css",
+  "main.js": "/miflagator/static/js/main.fd456bb9.chunk.js",
+  "main.js.map": "/miflagator/static/js/main.fd456bb9.chunk.js.map",
   "static/js/1.61b63230.chunk.js": "/miflagator/static/js/1.61b63230.chunk.js",
   "static/js/1.61b63230.chunk.js.map": "/miflagator/static/js/1.61b63230.chunk.js.map",
   "runtime~main.js": "/miflagator/static/js/runtime~main.238e3072.js",
   "runtime~main.js.map": "/miflagator/static/js/runtime~main.238e3072.js.map",
   "static/media/croc.png": "/miflagator/static/media/croc.1f71e715.png",
-  "static/css/main.cfb837f3.chunk.css.map": "/miflagator/static/css/main.cfb837f3.chunk.css.map",
+  "static/css/main.289fdf1f.chunk.css.map": "/miflagator/static/css/main.289fdf1f.chunk.css.map",
   "index.html": "/miflagator/index.html",
-  "precache-manifest.8d4a535ba1d7c89b43c41ab31f9a9b0f.js": "/miflagator/precache-manifest.8d4a535ba1d7c89b43c41ab31f9a9b0f.js",
+  "precache-manifest.9264dea1c0d719d76a303f38d9b15128.js": "/miflagator/precache-manifest.9264dea1c0d719d76a303f38d9b15128.js",
   "service-worker.js": "/miflagator/service-worker.js"
 }
