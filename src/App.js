@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 
 const firstWords = [
@@ -206,11 +207,14 @@ class App extends Component {
 
                 <header className="App-header">
 
+                    <img src={logo} className="App-logo" alt="logo" />
                     <h1>המפלגטור</h1>
                     <br/>
                     <button className="btn btn-lg btn-success" onClick={this.onClick}>לחצו וחוללו</button>
                     <br/>
+                    <br/>
                     <p>{this.state.party}</p>
+                    <br/>
 
                     <button className="facebook" onClick={this.onShareClick}>share</button>
 
