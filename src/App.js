@@ -203,24 +203,40 @@ class App extends Component {
     render() {
         return (
 
+
             <div className="App">
 
-                <header className="App-header">
+                <div>
+                    <img src={logo} className="logo" alt="logo"/>
+                </div>
+                <div>
+                    <div className="title">המפלגטור</div>
+                </div>
+                <div className="desc">מחולל שמות המפלגות של ישראל</div>
 
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <h1>המפלגטור</h1>
-                    <h4>מחולל המפלגות של ישראל</h4>
-                    <br/>
+                <div>
                     <button className="btn btn-lg btn-success" onClick={this.onClick}>לחצו וחוללו</button>
-                    <br/>
-                    <br/>
-                    <p>{this.state.party}</p>
-                    <br/>
+                </div>
 
-                    <button className="facebook" onClick={this.onShareClick}>share</button>
+                {this.state.party && (
 
-                </header>
+                    <div>
+                        <p>{this.state.party}</p>
+
+                        <div>
+                            <button className="facebook" onClick={this.onShareClick}>share</button>
+                        </div>
+
+                    </div>
+                )}
+
+
+                <div className="fb-share-button"
+                     data-href="https://nati-levi.github.io/miflagator/"
+                     data-layout="button_count">
+                </div>
             </div>
+
         );
     }
 }
