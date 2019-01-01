@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/miflagator/static/css/main.289fdf1f.chunk.css"
   },
   {
-    "revision": "975ad90e7fe70c0c74464a9a6928648e",
+    "revision": "45880e60e69da8cdb3ecd2d59e580237",
     "url": "/miflagator/index.html"
   }
 ];
