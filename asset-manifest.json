@@ -1,14 +1,13 @@
 {
-  "main.css": "/miflagator/static/css/main.df44960e.chunk.css",
-  "main.js": "/miflagator/static/js/main.d942580f.chunk.js",
-  "main.js.map": "/miflagator/static/js/main.d942580f.chunk.js.map",
-  "static/js/1.f715b2e0.chunk.js": "/miflagator/static/js/1.f715b2e0.chunk.js",
-  "static/js/1.f715b2e0.chunk.js.map": "/miflagator/static/js/1.f715b2e0.chunk.js.map",
+  "main.css": "/miflagator/static/css/main.d7406d0b.chunk.css",
+  "main.js": "/miflagator/static/js/main.3a60bc66.chunk.js",
+  "main.js.map": "/miflagator/static/js/main.3a60bc66.chunk.js.map",
+  "static/js/1.61b63230.chunk.js": "/miflagator/static/js/1.61b63230.chunk.js",
+  "static/js/1.61b63230.chunk.js.map": "/miflagator/static/js/1.61b63230.chunk.js.map",
   "runtime~main.js": "/miflagator/static/js/runtime~main.238e3072.js",
   "runtime~main.js.map": "/miflagator/static/js/runtime~main.238e3072.js.map",
-  "static/media/logo.svg": "/miflagator/static/media/logo.5d5d9eef.svg",
-  "static/css/main.df44960e.chunk.css.map": "/miflagator/static/css/main.df44960e.chunk.css.map",
+  "static/css/main.d7406d0b.chunk.css.map": "/miflagator/static/css/main.d7406d0b.chunk.css.map",
   "index.html": "/miflagator/index.html",
-  "precache-manifest.20b81a8398c088510a197044faaadbed.js": "/miflagator/precache-manifest.20b81a8398c088510a197044faaadbed.js",
+  "precache-manifest.1cf48a3fe041eda106356d917a2e7477.js": "/miflagator/precache-manifest.1cf48a3fe041eda106356d917a2e7477.js",
   "service-worker.js": "/miflagator/service-worker.js"
 }
