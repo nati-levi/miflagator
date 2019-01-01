@@ -177,6 +177,7 @@ class App extends Component {
         super();
 
         this.state = {
+            generated: false,
             party: ''
         };
 
@@ -186,6 +187,7 @@ class App extends Component {
 
     onClick() {
         this.setState({
+            generated: true,
             party: randomizePartyName()
         });
     }
@@ -201,41 +203,38 @@ class App extends Component {
     }
 
     render() {
+
+        const { generated, party } = this.state;
+
         return (
 
-
-            <div className="App">
-
-                <div>
-                    <img src={logo} className="logo" alt="logo"/>
-                </div>
-                <div>
-                    <div className="title">המפלגטור</div>
-                </div>
-                <div className="desc">מחולל שמות המפלגות של ישראל</div>
-
-                <div>
-                    <button className="btn btn-lg btn-success" onClick={this.onClick}>לחצו וחוללו</button>
+            <div>
+                <div className="green-bg">
+                    <div className="title">מחוללים מהפכה. <strong>המפלגטור.</strong></div>
+                    <div className="desc">מחולל שמות המפלגות של ישראל</div>
+                    <button className="generate-button" onClick={this.onClick}>{generated ? "חוללו מחדש" : "לחצו וחוללו"}</button>
                 </div>
 
-                {this.state.party && (
+                {generated && (
 
-                    <div>
-                        <p>{this.state.party}</p>
+                    <div className="shows-after-click">
+                        <div className="congratulations">ברכותינו! המפלגטור ממליץ:</div>
+                        <div className="party">{party}</div>
 
                         <div>
-                            <button className="facebook" onClick={this.onShareClick}>share</button>
+                            <button className="share" onClick={this.onShareClick}>שתפו בכל הכח!</button>
                         </div>
 
                     </div>
                 )}
 
 
-                <div className="fb-share-button"
-                     data-href="https://nati-levi.github.io/miflagator/"
-                     data-layout="button_count">
-                </div>
+                {/*<div className="fb-share-button"*/}
+                {/*data-href="https://nati-levi.github.io/miflagator/"*/}
+                {/*data-layout="button_count">*/}
+                {/*</div>*/}
             </div>
+
 
         );
     }
