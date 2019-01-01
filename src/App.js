@@ -209,6 +209,7 @@ class App extends Component {
 
                     <img src={logo} className="App-logo" alt="logo" />
                     <h1>המפלגטור</h1>
+                    <h4>מחולל המפלגות של ישראל</h4>
                     <br/>
                     <button className="btn btn-lg btn-success" onClick={this.onClick}>לחצו וחוללו</button>
                     <br/>
