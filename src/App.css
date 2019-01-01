@@ -42,6 +42,7 @@
     transform: translateY(30px);
     -webkit-transform: translateY(30px);
     background-color: #fff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 .shows-after-click {
@@ -51,6 +52,7 @@
 .congratulations {
     color: #555;
     font-size: 20px;
+    margin-bottom: 5px;
 }
 
 .party {
@@ -67,6 +69,7 @@
     font-size: 20px;
     padding: 6px 14px;
     outline: none;
+    margin-bottom: 30px;
 }
 
 .croc {

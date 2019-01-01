@@ -57,16 +57,19 @@ const firstWords = [
     "מפלגה",
     "פנינה",
     "גה\"ת",
-    "האזרחים",
     "האחדות",
+    "אחדות",
     "הבחירה",
     "ההתיישבות",
+    "התיישבות",
     "הירוקים",
     "המרכז",
     "העבודה",
     "העצמאות",
+    "עצמאות",
     "הערבי",
     "הרפורמה",
+    "רפורמה",
     "חוק",
     "כלכלה",
     "נגב",
@@ -111,6 +114,8 @@ const secondWords = [
     "ישראלי",
     "אנחנו",
     "חדשה",
+    "חדש",
+    "חדשים",
     "עולם",
     "הלאומי-תקומה",
     "היהודי",
@@ -119,6 +124,8 @@ const secondWords = [
     "הקומוניסטית",
     "אגודת",
     "החדשה",
+    "החדשים",
+    "החדש",
     "הערבית",
     "להתחדשות",
     "בקולנו",
@@ -170,6 +177,14 @@ const getRandomItem = (array) => array[Math.floor(Math.random() * array.length)]
 
 const randomizePartyName = () => `${getRandomItem(firstWords)} ${getRandomItem(secondWords)}`;
 
+const generateSecondaryParties = (party) => {
+    return [
+        `יותר ${party}`,
+        `כולנו ${party}`,
+        `${party} החדשה`,
+        `${party} לישראל`,
+    ];
+};
 
 class App extends Component {
 
@@ -178,7 +193,8 @@ class App extends Component {
 
         this.state = {
             generated: false,
-            party: ''
+            party: '',
+            secondaryParties: []
         };
 
         this.onClick = this.onClick.bind(this);
@@ -186,9 +202,12 @@ class App extends Component {
     }
 
     onClick() {
+
+        const party = randomizePartyName();
         this.setState({
             generated: true,
-            party: randomizePartyName()
+            party: party,
+            secondaryParties: generateSecondaryParties(party)
         });
     }
 
@@ -204,7 +223,7 @@ class App extends Component {
 
     render() {
 
-        const { generated, party } = this.state;
+        const { generated, party, secondaryParties } = this.state;
 
         return (
 
@@ -212,7 +231,8 @@ class App extends Component {
                 <div className="green-bg">
                     <div className="title">מחוללים מהפכה. <strong>המפלגטור.</strong></div>
                     <div className="desc">מחולל שמות המפלגות של ישראל</div>
-                    <button className="generate-button" onClick={this.onClick}>{generated ? "חוללו מחדש" : "לחצו וחוללו"}</button>
+                    <button className="generate-button"
+                            onClick={this.onClick}>{generated ? "חוללו מחדש" : "לחצו וחוללו"}</button>
                 </div>
 
                 {generated && (
@@ -225,10 +245,15 @@ class App extends Component {
                             <button className="share" onClick={this.onShareClick}>שתפו בכל הכח!</button>
                         </div>
 
+                        <div className="congratulations">אולי תאהבו גם:</div>
+                        {secondaryParties.map(sparty => (
+                            <div>{sparty}</div>
+                        ))}
+
                     </div>
                 )}
 
-                <img src={croc} className="croc" />
+                <img src={croc} className="croc"/>
 
                 {/*<div className="fb-share-button"*/}
                 {/*data-href="https://nati-levi.github.io/miflagator/"*/}
