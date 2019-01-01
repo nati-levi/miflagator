@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-import logo from './logo.png';
+import croc from './croc.png';
 import './App.css';
 
 const firstWords = [
@@ -228,6 +228,7 @@ class App extends Component {
                     </div>
                 )}
 
+                <img src={croc} className="croc" />
 
                 {/*<div className="fb-share-button"*/}
                 {/*data-href="https://nati-levi.github.io/miflagator/"*/}
